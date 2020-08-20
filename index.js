@@ -15,3 +15,23 @@ if (flag1) {
 } else {
 	console.log('нет');
 }
+
+/*2. необходимо создать функцию hasElem, которая параметром будет принимать массив и возвращать true, если 'c' есть в массиве, и false - если нет*/
+/**
+ *
+ * @param array
+ * @returns {boolean}
+ */
+function hasElem(array) {
+	let flag = false;
+	for (let i = 0; i < array.length; i++) {
+		if (array[i] === 'c') {
+			flag = true;
+			break;
+		}
+	}
+	return flag;
+}
+
+console.log('Task 2');
+console.log(hasElem(arr1));
