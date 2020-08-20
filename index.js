@@ -64,3 +64,22 @@ for (let i = 2; i < 31; i++) {
 	}
 }
 console.log(flag3);
+
+/*5.Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть - выведите 'да', а если нет - выведите 'нет'.*/
+
+console.log('Task 5');
+
+const arr3 = [45, 5567, 324, 23, 345, 345, 56867, 234556768];
+
+let flag4 = false;
+for (let i = 1; i < arr3.length; i++) {
+	if (arr3[i] === arr3[i - 1]) {
+		flag4 = true;
+	}
+}
+
+if (flag4) {
+	console.log('да');
+} else {
+	console.log('нет');
+}
